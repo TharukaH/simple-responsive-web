@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #2c2c34;
+}
+
+header {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #272727;
+}
+
+
+.logo a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding-top: 0.3rem;
+    padding-left: 0;
+}
+
+header li {
+    margin-left: 3.5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+header a:hover {
+    color: indianred;
+}
+
+.menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color: #272727;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#side-drawer:target {
+    display: block;
+}
+
+#side-drawer header {
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #272727;
+}
+
+#side-drawer ul {
+    list-style: none;
+    padding: 4rem 1rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-drawer li {
+    margin: 2rem 0;
+}
+
+#side-drawer a {
+    text-decoration: none;
+    color: rgb(253, 239, 213);
+    font-size: 2rem;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding-top: 1.2rem;
+    text-align: center;
+    color: goldenrod;
+}
+
+#latest-products {
+    width: 50%;
+    margin: 3rem auto;
+}
+
+#latest-products ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.food-item {
+    background-color: #ffcc9d;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.food-item img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.content {
+    color: 	#4c1130;
+    text-align: center;  
+    padding: 0.6rem 0;
+    
+}
+
+.content h2 {
+    margin: 0;
+    margin-bottom: 0.6rem;
+}
+
+.content a {
+    text-decoration: none;
+    background-color: #de9920;
+    padding: 0.4rem;
+    border-radius: 7px;
+    color: lavenderblush;
+}
+
+.content a:hover {
+    color:#ffcc9d;
+    background-color: #bc980d;
+}
+
+@media (max-width: 48rem) {
+    .logo a {
+        font-size: 1.8rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    #latest-products ul {
+        grid-template-columns: 1fr;
+    }
+}
